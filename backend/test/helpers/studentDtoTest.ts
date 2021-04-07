@@ -8,7 +8,8 @@ export class StudentTestData {
             lastName: 'Uchiha',
             email: 'betrayer@akatsuki.com.br',
             birthDate: new Date(1995, 6, 18),
-            instrument: 1,
+            password: "password",
+            instrumentsArray: ["Saab", "Volvo", "BMW"];
         }
         return validStudentDto;
     }
