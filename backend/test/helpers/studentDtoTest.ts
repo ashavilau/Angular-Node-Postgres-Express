@@ -9,7 +9,7 @@ export class StudentTestData {
             email: 'betrayer@akatsuki.com.br',
             birthDate: new Date(1995, 6, 18),
             password: "password",
-            instrumentsArray: [1, 2, 3];
+            instrumentsArray: [1, 2, 3]
         }
         return validStudentDto;
     }
