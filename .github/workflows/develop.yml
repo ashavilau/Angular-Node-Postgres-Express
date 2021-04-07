@@ -25,7 +25,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install -g nest
-    - run: cd ./backend/ && npm install --prefix ./backend/
-    - run: npm run build
-    - run: npm test --prefix ./backend/
+    - run: npm install --prefix ./backend/ --if-present
+    - run: npm run build --prefix ./backend/ --if-present
+    - run: npm test --prefix ./backend/ --if-present
